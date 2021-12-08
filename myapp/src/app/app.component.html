@@ -1,6 +1,18 @@
+<nb-layout>
 
-<app-square [value]="'X'"> </app-square>
+  <nb-layout-header fixed>
+  <!-- Insert header here -->
+  </nb-layout-header>
 
-<app-board></app-board>
+  <nb-layout-column>
 
-<router-outlet></router-outlet>
+    <app-board></app-board>
+
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+  <!-- Insert footer here -->
+  </nb-layout-footer>
+
+</nb-layout>
